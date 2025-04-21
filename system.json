@@ -33,7 +33,7 @@
     },
     "primaryTokenAttribute": "resources.health",
     "secondaryTokenAttribute": "null",
-    "url": "https://your/hosted/system/repo/",
-    "manifest": "https://your/hosted/system/repo/system.json",
-    "download": "https://your/packaged/download/archive.zip"
+    "url": "https://github.com/dbisdorf/foundry-faserip",
+    "manifest": "https://github.com/dbisdorf/foundry-faserip/releases/latest/download/system.json",
+    "download": "https://github.com/dbisdorf/foundry-faserip/releases/download/v0.1.0/foundry-faserip.zip"
   }
