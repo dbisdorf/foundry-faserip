@@ -1,0 +1,26 @@
+<div class="improve-grid">
+
+      <div class="improve-name flex3">{{localize "FASERIP.improvement"}}</div>
+      <div class="improve-successes flex1">{{localize "FASERIP.successes"}}</div>
+      <div class="improve-controls flex1">
+        <a class="improve-control" data-action="create" title="{{localize 'FASERIP.improvecreate'}}">
+          <i class="fas fa-plus"></i> {{localize "FASERIP.add"}}
+        </a>
+      </div>
+
+
+        {{#each system.improvements as |improve key|}}
+          <div class="improve-name flex3">
+            <input type="text" name="system.improvements.{{key}}.name" value="{{improve.name}}" data-dtype="String" />
+          </div>
+          <div class="improve-successes flex1">
+            <input type="text" name="system.improvements.{{key}}.successes" value="{{improve.successes}}" data-dtype="Number" />
+          </div>
+          <div class="improve-cell improve-controls flex1">
+            <a class="improve-control" data-action="delete" data-key="{{key}}" title="{{localize 'FASERIP.improvedelete'}}">
+              <i class="fas fa-trash"></i>
+            </a>
+          </div>
+        {{/each}}
+
+</div>

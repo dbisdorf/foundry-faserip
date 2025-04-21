@@ -1,0 +1,42 @@
+<form class="{{cssClass}}" autocomplete="off">
+    {{! Sheet Header }}
+    <header class="sheet-header flexcol">
+      {{> "systems/faserip/templates/actors/partials/actor-header.hbs"}}
+    </header>
+  
+    {{! Sheet Tab Navigation }}
+    <nav class="sheet-tabs tabs flexrow" data-group="primary">
+      <a class="item" data-tab="powers">
+        {{localize "FASERIP.category.powers"}}
+      </a>
+      <a class="item" data-tab="misc">
+        {{localize "FASERIP.category.misc"}}
+      </a>
+      {{#if isHero}}
+      <a class="item" data-tab="improve">
+        {{localize "FASERIP.category.improve"}}
+      </a>
+      {{/if}}
+      <a class="item" data-tab="bio">
+        {{localize "FASERIP.category.bio"}}
+      </a>
+    </nav>
+    {{! Sheet Body }}
+    <section class="sheet-body">
+      {{! Attributes Tab }}
+      <div class="tab" data-group="primary" data-tab="powers">
+        {{> "systems/faserip/templates/actors/partials/actor-powers-tab.hbs"}}
+      </div>
+      <div class="tab" data-group="primary" data-tab="misc">
+        {{> "systems/faserip/templates/actors/partials/actor-misc-tab.hbs"}}
+      </div>
+      {{#if isHero}}
+      <div class="tab" data-group="primary" data-tab="improve">
+        {{> "systems/faserip/templates/actors/partials/hero-improve-tab.hbs"}}
+      </div>
+      {{/if}}
+      <div class="tab" data-group="primary" data-tab="bio">
+        {{> "systems/faserip/templates/actors/partials/actor-bio-tab.hbs"}}
+      </div>
+    </section>
+  </form>

@@ -1,0 +1,24 @@
+<ul class="misc-list flexrow">
+    <li class="flex1">
+        <a class="rollable" data-rank="{{system.secondary.wealth}}" data-source="FASERIP.details.wealth" title="{{localize 'FASERIP.roll'}}">
+            {{localize "FASERIP.details.wealth"}}
+        </a>        
+        <select name="system.secondary.wealth">
+            {{ selectOptions @root.dropdownRanks selected=system.secondary.wealth localize=true }}
+        </select>        
+    </li>
+    <li class="flex1">        
+        <a class="rollable" data-rank="{{system.secondary.fame}}" data-source="FASERIP.details.fame" title="{{localize 'FASERIP.roll'}}">
+            {{localize "FASERIP.details.fame"}}
+        </a>        
+        <select name="system.secondary.fame">
+            {{ selectOptions @root.dropdownRanks selected=system.secondary.fame localize=true }}
+        </select>        
+    </li>  
+</ul>
+
+<label for="specialties-text">{{localize "FASERIP.details.specialties"}}</label>
+<textarea id="specialties-text" class="specialties-text" rows=5 name="system.details.specialties">{{ system.details.specialties }}</textarea>
+
+<label for="contacts-text">{{localize "FASERIP.details.contacts"}}</label>
+<textarea id="contacts-text" class="contacts-text" rows=5 name="system.details.contacts">{{ system.details.contacts }}</textarea>

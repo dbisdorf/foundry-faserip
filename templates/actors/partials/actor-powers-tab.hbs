@@ -1,0 +1,39 @@
+<div class="power-grid">
+
+      <div></div>
+      <div class="power-name">{{localize "FASERIP.power"}}</div>
+      <div class="power-mod">{{localize "FASERIP.mod"}}</div>
+      <div class="power-rank">{{localize "FASERIP.rank"}}</div>
+      <div class="power-value">{{localize "FASERIP.value"}}</div>
+      <div class="power-controls">
+        <a class="power-control" data-action="create" title="{{localize 'FASERIP.powercreate'}}">
+          <i class="fas fa-plus"></i> {{localize "FASERIP.add"}}
+        </a>
+      </div>
+
+        {{#each system.powers as |power key|}}
+          <a class="power-cell right-cell rollable flex1" data-rank="{{power.value}}" data-source="{{power.name}}" title="{{localize 'FASERIP.roll'}}">
+            <i class="fas fa-dice power-dice"></i>
+          </a>
+          <div class="power-name flex3">
+            <input type="text" name="system.powers.{{key}}.name" value="{{power.name}}" data-dtype="String" />
+          </div>
+          <div class="power-mod flex3">
+            <input type="text" name="system.powers.{{key}}.modifiers" value="{{power.modifiers}}" data-dtype="String" />
+          </div>
+          <div class="power-rank flex2">
+            <select name="system.powers.{{key}}.value">
+              {{ selectOptions @root.dropdownRanks selected=power.value localize=true }}
+            </select>
+          </div>
+          <div class="power-cell power-value flex1">
+            {{power.value}}
+          </div>
+          <div class="power-cell power-controls flex1">
+            <a class="power-control" data-action="delete" data-key="{{key}}" title="{{localize 'FASERIP.powerdelete'}}">
+              <i class="fas fa-trash"></i>
+            </a>
+          </div>
+        {{/each}}
+</div>
+    

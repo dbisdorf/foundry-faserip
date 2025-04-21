@@ -1,0 +1,65 @@
+{
+    "FASERIP.power": "Power",
+    "FASERIP.mod": "Modifiers",
+    "FASERIP.rank": "Rank",
+    "FASERIP.value": "Value",
+
+    "FASERIP.improvement": "Improvement",
+    "FASERIP.successes": "Successes",
+
+    "FASERIP.category.powers": "Powers",
+    "FASERIP.category.misc": "Misc",
+    "FASERIP.category.improve": "Improve",
+    "FASERIP.category.bio": "Bio",
+
+    "FASERIP.details.hero-type": "Hero Type",
+    "FASERIP.details.real-name": "Real Name",
+    "FASERIP.details.health": "Health",
+    "FASERIP.details.maxhealth": "Max Health",
+    "FASERIP.details.karma": "Karma",
+    "FASERIP.details.wealth": "Wealth",
+    "FASERIP.details.fame": "Fame",
+    "FASERIP.details.contacts": "Contacts",
+    "FASERIP.details.specialties": "Specialties",
+    "FASERIP.details.biography": "Biography",
+
+    "FASERIP.ability.fighting": "Fighting",
+    "FASERIP.ability.agility": "Agility",
+    "FASERIP.ability.strength": "Strength",
+    "FASERIP.ability.endurance": "Endurance",
+    "FASERIP.ability.reason": "Reason",
+    "FASERIP.ability.intuition": "Intuition",
+    "FASERIP.ability.psyche": "Psyche",
+
+    "FASERIP.feat.white": "White",
+    "FASERIP.feat.bronze": "Bronze",
+    "FASERIP.feat.silver": "Silver",
+    "FASERIP.feat.gold": "Gold",
+
+    "FASERIP.ranks": {
+        "zero": "Zero",
+        "terrible": "Terrible",
+        "bad": "Bad",
+        "average": "Average",
+        "decent": "Decent",
+        "great": "Great",
+        "worldclass": "World Class",
+        "fantastic": "Fantastic",
+        "astounding": "Astounding",
+        "wondrous": "Wondrous",
+        "phenomenal": "Phenomenal",
+        "singleshift": "Single-Shift",
+        "doubleshift": "Double-Shift",
+        "tripleshift": "Triple-Shift",
+        "planetary": "Planetary",
+        "stellar": "Stellar",
+        "cosmic": "Cosmic",
+        "infinite": "Infinite"
+    },
+
+    "FASERIP.add": "Add",
+    "FASERIP.powercreate": "Create a new power",
+    "FASERIP.powerdelete": "Remove this power",
+    "FASERIP.improvecreate": "Create a new improvement",
+    "FASERIP.improvedelete": "Remove this improvement"   
+}

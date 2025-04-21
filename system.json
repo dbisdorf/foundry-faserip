@@ -1,0 +1,39 @@
+{
+    "id": "faserip",
+    "title": "FASERIP",
+    "description": "A framework for FASERIP-based games.",
+    "version": "0.1.0",
+    "compatibility": {
+      "minimum": 11,
+      "verified": 11
+    },
+    "authors": [{
+      "name": "Don Bisdorf",
+      "url": "http://www.donbisdorf.com",
+      "email": "dbisdorf@gmail.com"
+    }],
+    "esmodules": ["faserip.mjs"],
+    "styles": ["styles/faserip-styles.css"],
+    "languages": [{
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }],    
+    "documentTypes": {
+      "Actor": {
+        "hero": { "htmlFields": ["background.biography"] },
+        "villain": { "htmlFields": ["background.biography"] }
+      }
+    },
+    "socket": false,
+    "initiative": "1d20",
+    "grid": {
+      "distance": 1,
+      "units": "zone"
+    },
+    "primaryTokenAttribute": "resources.health",
+    "secondaryTokenAttribute": "null",
+    "url": "https://your/hosted/system/repo/",
+    "manifest": "https://your/hosted/system/repo/system.json",
+    "download": "https://your/packaged/download/archive.zip"
+  }

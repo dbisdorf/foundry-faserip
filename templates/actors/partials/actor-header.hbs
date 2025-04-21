@@ -1,0 +1,95 @@
+<section class="header-details flexcol">
+  <div class="flexrow namerow">
+    <img class="profile-img" src="{{actor.img}}" data-edit="img"/>
+    <h1 class="charname">
+      <input name="name" type="text" value="{{actor.name}}" placeholder="{{localize 'FASERIP.details.name'}}" data-dtype="String" />
+    </h1>
+  </div>
+  <ul class="summary flexrow">
+    <li class="flex3">        
+      <input type="text" name="system.background.heroType" value="{{system.background.heroType}}" data-dtype="String" />
+      <label>{{localize 'FASERIP.details.hero-type'}}</label>
+    </li>
+    <li class="flex3">        
+        <input type="text" name="system.background.realName" value="{{system.background.realName}}" data-dtype="String" />
+        <label>{{localize 'FASERIP.details.real-name'}}</label>
+    </li>  
+    <li class="flex1">
+      <input type="number" name="system.resources.health.value" value="{{system.resources.health.value}}" data-dtype="Number" />
+      <label>{{localize 'FASERIP.details.health'}}</label>
+    </li>
+    <li class="flex1">
+      <input type="number" name="system.resources.health.max" value="{{system.resources.health.max}}" readonly="true" />
+      <div>{{localize 'FASERIP.details.maxhealth'}}</div>
+    </li>    
+    <li class="flex1">
+      <input type="number" name="system.resources.karma" value="{{system.resources.karma}}" data-dtype="Number" />
+      <label>{{localize 'FASERIP.details.karma'}}</label>
+    </li>
+  </ul>
+  <ul class="ability-list flexrow">
+      <li class="flex3">
+          <a class="ability-name rollable" data-rank="{{system.abilities.fighting}}" data-source="FASERIP.ability.fighting" title="{{localize 'FASERIP.roll'}}">
+            {{localize "FASERIP.ability.fighting"}}
+          </a>
+          <select class="ability-control" name="system.abilities.fighting">
+            {{ selectOptions @root.dropdownRanks selected=system.abilities.fighting localize=true }}
+          </select>
+          {{system.abilities.fighting}}
+      </li>
+      <li class="flex3">
+          <a class="ability-name rollable" data-rank="{{system.abilities.agility}}" data-source="FASERIP.ability.agility" title="{{localize 'FASERIP.roll'}}">
+            {{localize "FASERIP.ability.agility"}}
+          </a>
+          <select class="ability-control" name="system.abilities.agility">
+            {{ selectOptions @root.dropdownRanks selected=system.abilities.agility localize=true }}
+          </select>
+          {{system.abilities.agility}}          
+      </li>
+      <li class="flex3">
+          <a class="ability-name rollable" data-rank="{{system.abilities.strength}}" data-source="FASERIP.ability.strength" title="{{localize 'FASERIP.roll'}}">
+            {{localize "FASERIP.ability.strength"}}
+          </a>
+          <select class="ability-control" name="system.abilities.strength">
+            {{ selectOptions @root.dropdownRanks selected=system.abilities.strength localize=true }}
+          </select>
+          {{system.abilities.strength}}    
+      </li>
+      <li class="flex3">
+          <a class="ability-name rollable" data-rank="{{system.abilities.endurance}}" data-source="FASERIP.ability.endurance" title="{{localize 'FASERIP.roll'}}">
+            {{localize "FASERIP.ability.endurance"}}
+          </a>
+          <select class="ability-control" name="system.abilities.endurance">
+            {{ selectOptions @root.dropdownRanks selected=system.abilities.endurance localize=true }}
+          </select>
+          {{system.abilities.endurance}}   
+      </li>
+      <li class="flex3">
+          <a class="ability-name rollable" data-rank="{{system.abilities.reason}}" data-source="FASERIP.ability.reason" title="{{localize 'FASERIP.roll'}}">
+            {{localize "FASERIP.ability.reason"}}
+          </a>
+          <select class="ability-control" name="system.abilities.reason">
+            {{ selectOptions @root.dropdownRanks selected=system.abilities.reason localize=true }}
+          </select>
+          {{system.abilities.reason}}   
+      </li>
+      <li class="flex3">
+          <a class="ability-name rollable" data-rank="{{system.abilities.intuition}}" data-source="FASERIP.ability.intuition" title="{{localize 'FASERIP.roll'}}">
+            {{localize "FASERIP.ability.intuition"}}
+          </a>
+          <select class="ability-control" name="system.abilities.intuition">
+            {{ selectOptions @root.dropdownRanks selected=system.abilities.intuition localize=true }}
+          </select>
+          {{system.abilities.intuition}}   
+      </li>
+      <li class="flex3">
+          <a class="ability-name rollable" data-rank="{{system.abilities.psyche}}" data-source="FASERIP.ability.psyche" title="{{localize 'FASERIP.roll'}}">
+            {{localize "FASERIP.ability.psyche"}}
+          </a>
+          <select class="ability-control" name="system.abilities.psyche">
+            {{ selectOptions @root.dropdownRanks selected=system.abilities.psyche localize=true }}
+          </select>
+          {{system.abilities.psyche}}   
+      </li>
+  </ul>  
+</section>

@@ -1,0 +1,68 @@
+.faserip .namerow {
+    align-items: center;
+}
+
+.faserip header.sheet-header img.profile-img {
+    height: 100px;
+    width: 100px;
+    min-width: 100px;
+}
+
+.faserip .summary {
+    list-style: none;
+    text-align: center;
+}
+
+.faserip .ability-list {
+    list-style: none;
+    text-align: center;    
+}
+
+.faserip .power-grid {
+    display: grid;
+    grid: auto-flow / 1fr 2fr 4fr 2fr 1fr 1fr;
+}
+
+.faserip .power-cell {
+    align-items: center;
+    display: flex;
+}
+
+.faserip .power-dice {
+    display: block;
+    margin-right: 5px;
+    margin-left: auto;
+}
+
+.faserip .misc-list {
+    list-style: none;
+    text-align: center;    
+    margin: 0;
+    padding: 0;
+}
+
+.faserip .bio-text {
+    resize: none;
+}
+
+.faserip .improve-grid {
+    display: grid;
+    grid: auto-flow / 5fr 1fr 1fr;
+}
+
+.faserip .improve-cell {
+    align-items: center;
+    display: flex;
+}
+
+.roll-feat {
+    text-align: center;
+    font-size: 16px;
+}
+
+.roll-result {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 4px;
+}
