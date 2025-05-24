@@ -55,6 +55,13 @@
     display: flex;
 }
 
+.faserip .portrait-img {
+    flex: 0;
+    height: 275px;
+    width: 200px;
+    min-width: 200px;    
+}
+
 .roll-feat {
     text-align: center;
     font-size: 16px;

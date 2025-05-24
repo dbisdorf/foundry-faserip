@@ -1,4 +1,4 @@
-const { HTMLField, NumberField, SchemaField, StringField, ArrayField } = foundry.data.fields;
+const { HTMLField, NumberField, SchemaField, StringField, ArrayField, FilePathField } = foundry.data.fields;
 
 /* -------------------------------------------- */
 /*  Actor Models                                */
@@ -42,7 +42,8 @@ class ActorDataModel extends foundry.abstract.TypeDataModel {
         background: new SchemaField({
             realName: new StringField({ required: true, blank: true }),
             heroType: new StringField({ required: true, blank: true }),
-            biography: new HTMLField({ required: true, blank: true })
+            biography: new HTMLField({ required: true, blank: true }),
+            fullPortrait: new FilePathField({ categories: ["IMAGE"], required: false, initial: data => 'icons/svg/mystery-man.svg' })
         })
     };
   }

@@ -21,7 +21,10 @@
     }],    
     "documentTypes": {
       "Actor": {
-        "hero": { "htmlFields": ["background.biography"] },
+        "hero": { 
+          "htmlFields": ["background.biography"],
+          "filePathFields": { "background.fullPortrait": ["IMAGE"] }
+         },
         "villain": { "htmlFields": ["background.biography"] }
       }
     },

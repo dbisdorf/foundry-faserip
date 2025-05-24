@@ -1,2 +1,6 @@
-<label for="bio-text">{{localize "FASERIP.details.biography"}}</label>
-<textarea id="bio-text" class="bio-text" rows=10 name="system.background.biography">{{ system.background.biography }}</textarea>
+<div class="flexrow">
+    <img class="portrait-img" src="{{system.background.fullPortrait}}" data-edit="system.background.fullPortrait"/>
+
+    <!--<label for="bio-text">{{localize "FASERIP.details.biography"}}</label>-->
+    <textarea id="bio-text" class="bio-text" rows=10 name="system.background.biography">{{ system.background.biography }}</textarea>
+</div>
