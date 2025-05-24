@@ -18,7 +18,10 @@
 </ul>
 
 <label for="specialties-text">{{localize "FASERIP.details.specialties"}}</label>
-<textarea id="specialties-text" class="specialties-text" rows=5 name="system.details.specialties">{{ system.details.specialties }}</textarea>
+<textarea id="specialties-text" class="specialties-text" rows=3 name="system.specialties">{{ system.specialties }}</textarea>
+
+<label for="weaknesses-text">{{localize "FASERIP.details.weaknesses"}}</label>
+<input id="specialties-text" type="text" name="system.weaknesses" value="{{ system.weaknesses }}" data-dtype="String" />
 
 <label for="contacts-text">{{localize "FASERIP.details.contacts"}}</label>
-<textarea id="contacts-text" class="contacts-text" rows=5 name="system.details.contacts">{{ system.details.contacts }}</textarea>
+<textarea id="contacts-text" class="contacts-text" rows=3 name="system.contacts">{{ system.contacts }}</textarea>
