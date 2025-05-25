@@ -60,6 +60,7 @@
     height: 275px;
     width: 200px;
     min-width: 200px;    
+    object-fit: cover;
 }
 
 .roll-feat {
