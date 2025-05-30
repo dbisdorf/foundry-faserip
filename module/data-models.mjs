@@ -55,7 +55,7 @@ export class HeroDataModel extends ActorDataModel {
       ...super.defineSchema(),
       improvements: new ArrayField(new SchemaField({
         name: new StringField({ required: true, blank: true}),
-        successes: new NumberField({ required: true, integer: true, min: 0, max: 3, initial: 0 })
+        successes: new NumberField({ required: true, integer: true, min: 0, initial: 0 })
       })),      
     };
   }
